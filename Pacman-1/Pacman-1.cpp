@@ -18,6 +18,7 @@ int puntuacion_actual = 0;
 int puntuacion_total;
 
 void Setup() {
+
 	personaje_x = MAP_HORIZONTAL / 2;
 	personaje_y = MAP_VERTICAL / 2;
 	for (size_t i = 0; i < MAP_VERTICAL; i++)
@@ -168,6 +169,7 @@ void Draw() {
 
 int main()
 {
+	
 	Setup();
 	Draw();
 	while (run)
