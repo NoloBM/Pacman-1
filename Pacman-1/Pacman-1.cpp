@@ -2,7 +2,6 @@
 //
 
 #include <iostream>
-#include<Windows.h>
 #define MAP_VERTICAL 30
 #define MAP_HORIZONTAL 120
 #define PERSONAJE 'O'
