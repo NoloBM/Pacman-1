@@ -46,6 +46,18 @@ void Setup() {
 	map[11][MAP_HORIZONTAL - 1] = TILES::EMPTY;
 	map[12][MAP_HORIZONTAL - 1] = TILES::EMPTY;
 	map[13][MAP_HORIZONTAL - 1] = TILES::EMPTY;
+
+	for (size_t i = 0; i < MAP_VERTICAL; i++)
+	{
+		for (size_t j = 0; j < MAP_HORIZONTAL; j++)
+		{
+			if (map[i][j] == TILES::POINT) {
+				puntuacion_total++;
+			}
+			
+		}
+
+	}
 }
 
 void Input() {
@@ -138,6 +150,7 @@ void Draw() {
 		}
 		std::cout << std::endl;
 	}
+	std::cout << puntuacion_actual << '/' << puntuacion_total;
 }
 
 int main()
